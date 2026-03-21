@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container": "#17172f",
+              "outline": "#74738b",
+              "error-container": "#a70138",
+              "on-error": "#490013",
+              "primary-fixed-dim": "#8387ff",
+              "surface-variant": "#23233f",
+              "on-secondary": "#1d3f6b",
+              "background": "#0c0c1f",
+              "secondary-fixed-dim": "#a6c5fa",
+              "on-error-container": "#ffb2b9",
+              "on-background": "#e5e3ff",
+              "secondary-container": "#274774",
+              "surface": "#0c0c1f",
+              "secondary-fixed": "#bad3ff",
+              "surface-dim": "#0c0c1f",
+              "secondary": "#a6c5fa",
+              "on-primary-container": "#0a0081",
+              "on-tertiary-fixed": "#00441d",
+              "on-primary": "#1000a3",
+              "surface-container-high": "#1d1d37",
+              "inverse-primary": "#413ff7",
+              "error": "#ff6e84",
+              "surface-container-highest": "#23233f",
+              "primary": "#a3a6ff",
+              "on-primary-fixed": "#000000",
+              "tertiary-fixed-dim": "#61e587",
+              "on-surface": "#e5e3ff",
+              "on-surface-variant": "#aaa8c3",
+              "surface-container-lowest": "#000000",
+              "surface-bright": "#292948",
+              "primary-container": "#9396ff",
+              "primary-fixed": "#9396ff",
+              "primary-dim": "#5c5eff",
+              "on-tertiary-container": "#005928",
+              "error-dim": "#d73357",
+              "on-tertiary-fixed-variant": "#00642e",
+              "on-secondary-fixed-variant": "#32517f",
+              "tertiary-fixed": "#70f494",
+              "tertiary-dim": "#61e587",
+              "inverse-on-surface": "#53536a",
+              "tertiary-container": "#70f494",
+              "surface-container-low": "#111127",
+              "surface-tint": "#a3a6ff",
+              "outline-variant": "#46465c",
+              "inverse-surface": "#fcf8ff",
+              "secondary-dim": "#99b7eb",
+              "on-tertiary": "#00632d",
+              "on-primary-fixed-variant": "#0e009d",
+              "on-secondary-container": "#b8d1ff",
+              "on-secondary-fixed": "#103460",
+              "tertiary": "#94ffab"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(35, 35, 63, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .kinetic-pulse-bg {
+            background: radial-gradient(circle at 0% 0%, #111127 0%, #0c0c1f 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-xl dark:bg-[#0c0c1f]/60 flex justify-between items-center px-6 md:px-12 py-6 max-w-[1920px] mx-auto shadow-[0_20px_50px_rgba(16,0,163,0.3)]">
+<div class="text-2xl font-headline font-bold tracking-tighter text-white uppercase" style="">Gamepad for Android TV
+        </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-headline tracking-tight text-sm uppercase text-[#a3a6ff] border-b-2 border-[#a3a6ff] pb-1"  href="gamepadwebsite.html#features" style="">Features</a>
+<a class="font-headline tracking-tight text-sm uppercase text-white/70 hover:text-white transition-colors" href="gamepadwebsite.html#how-it-works" style="">How It Works</a>
+<a class="font-headline tracking-tight text-sm uppercase text-white/70 hover:text-white transition-colors" href="gamepadwebsite.html#gallery" style="">Gallery</a>
+<a class="font-headline tracking-tight text-sm uppercase text-white/70 hover:text-white transition-colors" href="gamepadwebsite.html#compatibility" style="">Compatibility</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:flex items-center gap-2 text-white/70 hover:text-white font-headline text-sm uppercase transition-all" style="">
+<button class="bg-gradient-to-br from-primary to-primary-dim text-on-primary font-headline font-bold text-sm uppercase px-6 py-2 rounded-full hover:scale-105 active:scale-95 transition-all shadow-[0_0_15px_rgba(163,166,255,0.4)]" style="">
+                Download Now
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-6 max-w-4xl mx-auto kinetic-pulse-bg min-h-screen">
+<!-- Header Section -->
+<header class="mb-16 text-left">
+<span class="font-label text-primary uppercase tracking-widest text-sm font-bold mb-4 block">Legal Documentation</span>
+<h1 class="font-headline text-5xl md:text-6xl font-bold text-white tracking-tighter mb-4">Gamepad for Android TV Privacy Policy</h1>
+<div class="flex items-center gap-2 text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-primary text-sm" data-weight="fill">update</span>
+<p>Effective Date: March 16, 2026</p>
+</div>
+</header>
+<!-- Content Shell -->
+<div class="space-y-12">
+<!-- Introduction -->
+<section class="glass-panel p-8 rounded-xl border border-outline-variant/10">
+<h2 class="font-headline text-2xl font-bold text-primary mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined">info</span>
+                    Overview
+                </h2>
+<div class="space-y-4 text-on-surface-variant leading-relaxed text-lg">
+<p>This privacy policy applies to the Gamepad for Android TV app (hereby referred to as "Application") for mobile devices that was created by AIO TECH (hereby referred to as "Service Provider") as a Free service. This service is intended for use "AS IS".</p>
+</div>
+</section>
+<!-- Information Collection -->
+<section class="p-8 rounded-xl bg-surface-container-low">
+<h2 class="font-headline text-2xl font-bold text-primary mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined">dataset</span>
+                    Information Collection and Use
+                </h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed text-lg">
+<p>The Application collects information when you download and use it. This information may include information such as:</p>
+<ul class="grid md:grid-cols-2 gap-4">
+<li class="glass-panel p-4 rounded-lg flex items-center gap-3 border border-outline-variant/5">
+<span class="material-symbols-outlined text-primary">lan</span>
+<span>Device IP address</span>
+</li>
+<li class="glass-panel p-4 rounded-lg flex items-center gap-3 border border-outline-variant/5">
+<span class="material-symbols-outlined text-primary">history</span>
+<span>Pages visited &amp; timestamps</span>
+</li>
+<li class="glass-panel p-4 rounded-lg flex items-center gap-3 border border-outline-variant/5">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span>Time spent in Application</span>
+</li>
+<li class="glass-panel p-4 rounded-lg flex items-center gap-3 border border-outline-variant/5">
+<span class="material-symbols-outlined text-primary">phone_android</span>
+<span>Mobile Operating System</span>
+</li>
+</ul>
+<div class="mt-6 flex flex-col gap-4">
+<div class="flex items-start gap-3 p-4 bg-surface-container-highest rounded-lg border-l-4 border-error">
+<span class="material-symbols-outlined text-error">location_off</span>
+<p>The Application does not gather precise information about the location of your mobile device.</p>
+</div>
+<div class="flex items-start gap-3 p-4 bg-surface-container-highest rounded-lg border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary">smart_toy</span>
+<p>The Application does not use Artificial Intelligence (AI) technologies to process your data or provide features.</p>
+</div>
+</div>
+<p>The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices and marketing promotions.</p>
+<p>For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information. The information that the Service Provider request will be retained by them and used as described in this privacy policy.</p>
+</div>
+</section>
+<!-- Third Party Access -->
+<section class="glass-panel p-8 rounded-xl border border-outline-variant/10">
+<h2 class="font-headline text-2xl font-bold text-primary mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined">share</span>
+                    Third Party Access
+                </h2>
+<div class="space-y-4 text-on-surface-variant leading-relaxed text-lg">
+<p>Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.</p>
+<p>The Service Provider may disclose User Provided and Automatically Collected Information:</p>
+<ul class="space-y-4 mt-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">gavel</span>
+<span>As required by law, such as to comply with a subpoena, or similar legal process.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">security</span>
+<span>When they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">handshake</span>
+<span>With their trusted services providers who work on their behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.</span>
+</li>
+</ul>
+</div>
+</section>
+<!-- Opt-Out & Retention -->
+<section class="grid md:grid-cols-2 gap-8">
+<div class="p-8 rounded-xl bg-surface-container-low border border-outline-variant/10">
+<h2 class="font-headline text-2xl font-bold text-primary mb-4 flex items-center gap-3">
+<span class="material-symbols-outlined">logout</span>
+                        Opt-Out
+                    </h2>
+<p class="text-on-surface-variant leading-relaxed">You can stop all collection of information by the Application easily by uninstalling it. Use the standard uninstall processes available as part of your mobile device or via the mobile application marketplace.</p>
+</div>
+<div class="p-8 rounded-xl bg-surface-container-low border border-outline-variant/10">
+<h2 class="font-headline text-2xl font-bold text-primary mb-4 flex items-center gap-3">
+<span class="material-symbols-outlined">storage</span>
+                        Data Retention
+                    </h2>
+<p class="text-on-surface-variant leading-relaxed">The Service Provider will retain User Provided data for as long as you use the Application. For deletion requests, contact <a class="text-primary hover:underline" href="mailto:dev.aiotech@gmail.com">dev.aiotech@gmail.com</a>.</p>
+</div>
+</section>
+<!-- Children -->
+<section class="glass-panel p-8 rounded-xl border border-outline-variant/10">
+<h2 class="font-headline text-2xl font-bold text-primary mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined">child_care</span>
+                    Children's Privacy
+                </h2>
+<div class="space-y-4 text-on-surface-variant leading-relaxed text-lg">
+<p>The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13. The Service Provider does not knowingly collect personally identifiable information from children.</p>
+<p>We encourage parents and legal guardians to monitor their children's Internet usage. If you have reason to believe that a child has provided personally identifiable information, please contact us at <a class="text-primary hover:underline" href="mailto:dev.aiotech@gmail.com">dev.aiotech@gmail.com</a>. You must also be at least 16 years of age to consent to the processing of your personally identifiable information in your country.</p>
+</div>
+</section>
+<!-- Security & Consent -->
+<section class="grid md:grid-cols-2 gap-8">
+<div class="p-8 rounded-xl bg-surface-container-low border border-outline-variant/10">
+<h2 class="font-headline text-xl font-bold text-primary mb-4 flex items-center gap-3">
+<span class="material-symbols-outlined">verified_user</span>
+                        Security
+                    </h2>
+<p class="text-on-surface-variant">The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains.</p>
+</div>
+<div class="p-8 rounded-xl bg-surface-container-low border border-outline-variant/10">
+<h2 class="font-headline text-xl font-bold text-primary mb-4 flex items-center gap-3">
+<span class="material-symbols-outlined">check_circle</span>
+                        Your Consent
+                    </h2>
+<p class="text-on-surface-variant">By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by us.</p>
+</div>
+</section>
+<!-- Changes & Contact -->
+<section class="glass-panel p-12 rounded-xl border border-primary/10 text-center relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+<h2 class="font-headline text-3xl font-bold text-white mb-4">Contact Us</h2>
+<p class="text-on-surface-variant mb-4 max-w-2xl mx-auto">This Privacy Policy may be updated from time to time. You are advised to consult this page regularly for any changes.</p>
+<p class="text-on-surface-variant mb-8 max-w-2xl mx-auto">If you have any questions regarding privacy while using the Application, please contact the Service Provider.</p>
+<a class="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-primary-dim text-on-primary px-8 py-4 rounded-lg font-black font-headline transition-all duration-300 hover:shadow-[0_0_20px_#4A4AFF] active:scale-95 uppercase tracking-wider" href="mailto:dev.aiotech@gmail.com">
+                    Contact Service Provider
+                    <span class="material-symbols-outlined">mail</span>
+</a>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 md:px-12 mt-24 bg-[#111127] flex flex-col md:flex-row justify-between items-center gap-8 border-t border-white/5">
+<div class="text-center md:text-left">
+<div class="text-lg font-bold text-white mb-2 uppercase tracking-tighter font-headline" style="">Gamepad for Android TV</div>
+<p class="font-body text-xs text-white/50" style="">Turn Your Phone Into a Wireless Game Controller</p>
+</div>
+<div class="flex gap-8">
+<a class="font-body text-xs text-white/50 hover:text-[#a3a6ff] transition-colors" href="privacypolicy.html" style="">Privacy Policy</a>
+</div>
+<div class="font-body text-xs text-white/50" style="">
+            © 2026 AIO TECH. All rights reserved.
+        </div>
+</footer>
+</body></html>
