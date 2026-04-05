@@ -104,6 +104,17 @@
       ::-webkit-scrollbar-thumb:hover {
         background: #a3a6ff;
       }
+      nav .nav-link {
+        transition: color 0.2s ease, border-color 0.2s ease;
+      }
+      nav .nav-link.active {
+        color: #a3a6ff;
+        border-bottom: 2px solid #a3a6ff;
+        padding-bottom: 0.25rem;
+      }
+      nav .nav-link.active:hover {
+        color: #a3a6ff;
+      }
     </style>
 </head>
 <body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary overflow-x-hidden">
@@ -112,10 +123,10 @@
 <div class="text-2xl font-headline font-bold tracking-tighter text-white uppercase" style="">Gamepad for Android TV
         </div>
 <div class="hidden md:flex items-center gap-8">
-<a class="font-headline tracking-tight text-sm uppercase text-[#a3a6ff] border-b-2 border-[#a3a6ff] pb-1"  href="#features" style="">Features</a>
-<a class="font-headline tracking-tight text-sm uppercase text-white/70 hover:text-white transition-colors" href="#how-it-works" style="">How It Works</a>
-<a class="font-headline tracking-tight text-sm uppercase text-white/70 hover:text-white transition-colors" href="#gallery" style="">Gallery</a>
-<a class="font-headline tracking-tight text-sm uppercase text-white/70 hover:text-white transition-colors" href="#compatibility" style="">Compatibility</a>
+<a class="nav-link font-headline tracking-tight text-sm uppercase text-white/70 hover:text-white transition-colors" href="#features" style="">Features</a>
+<a class="nav-link font-headline tracking-tight text-sm uppercase text-white/70 hover:text-white transition-colors" href="#how-it-works" style="">How It Works</a>
+<a class="nav-link font-headline tracking-tight text-sm uppercase text-white/70 hover:text-white transition-colors" href="#gallery" style="">Gallery</a>
+<a class="nav-link font-headline tracking-tight text-sm uppercase text-white/70 hover:text-white transition-colors" href="#compatibility" style="">Compatibility</a>
 </div>
 <div class="flex items-center gap-4">
 <button class="hidden lg:flex items-center gap-2 text-white/70 hover:text-white font-headline text-sm uppercase transition-all" style="">
@@ -149,7 +160,7 @@
 <div class="w-full lg:w-1/2 relative flex justify-center lg:justify-end">
 <div class="relative w-[300px] h-[600px] bg-surface-container-lowest rounded-[3rem] border-8 border-surface-variant p-4 shadow-[0_0_80px_rgba(163,166,255,0.2)] rotate-12 hover:rotate-0 transition-transform duration-700">
 <!-- Glass Screen Content -->
-<img alt="Gamepad for Android TV App Interface" class="w-full h-full object-cover rounded-[1.8rem]" src="https://lh3.googleusercontent.com/aida/ADBb0uhtCysw9y5ixGBuUdwWLOhlJNgCbAFkE0o7UFyIN8Kunu_W4XmZ0bOtxFVw8ABEtlno6NGYPtWB6i7FclQ4VWIO0AUxK-Ahl_JvFoCyBE4COLwONc78bJez-Ar7k0RCRyAmFddw_-NGarpnQM6flm9z-sAzbQXh95bX9iTxQNy4HFEHE4tGaL9ls0QmVrl-9MrXzG2DHrRchE4e25QWczivPjJ2J9l__x0tAS4a0wERJyJWkDrM2Ws2tmgagTSdAEKSFvxw8t3zng" style="">
+<img alt="Gamepad for Android TV App Interface" class="w-full h-full object-cover rounded-[1.8rem]" src="images/4.png" style="">
 <!-- Glow Behind -->
 <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[80%] bg-primary/20 blur-[100px] rounded-full"></div>
 </div>
@@ -331,4 +342,23 @@
             © 2026 AIO TECH. All rights reserved.
         </div>
 </footer>
+<script>
+  const navLinks = document.querySelectorAll('nav .nav-link');
+
+  function updateActiveNav() {
+    const hash = window.location.hash;
+    navLinks.forEach(link => {
+      link.classList.toggle('active', hash && link.getAttribute('href') === hash);
+    });
+  }
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      setTimeout(updateActiveNav, 0);
+    });
+  });
+
+  window.addEventListener('hashchange', updateActiveNav);
+  updateActiveNav();
+</script>
 </body></html>
